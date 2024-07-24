@@ -48,14 +48,14 @@ import 'package:flutter/material.dart';
 /// );
 /// ```
 
-Future<void> aweSideSheet({
+Future<Object?> aweSideSheet({
   // required
   required BuildContext context,
   required SheetPosition sheetPosition,
 
   // widgets
   Widget? body,
-  Widget? footer,
+  // Widget? footer,
   Widget? header,
 
   // bools
@@ -63,7 +63,7 @@ Future<void> aweSideSheet({
   bool showBackButton = true,
   bool showCloseButton = true,
   bool showActions = true,
-  bool showFooterDivider = true,
+  // bool showFooterDivider = true,
   bool showHeaderDivider = true,
   bool showSideDivider = true,
   bool safeAreaTop = true,
@@ -98,7 +98,7 @@ Future<void> aweSideSheet({
   void Function()? onDismiss,
   void Function()? onClose,
 }) async {
-  await showGeneralDialog(
+  final result = await showGeneralDialog(
     context: context,
     transitionDuration: transitionDuration ?? const Duration(milliseconds: 500),
     barrierDismissible: barrierDismissible,
@@ -127,13 +127,13 @@ Future<void> aweSideSheet({
           title: title,
           // widgets
           body: body ?? const SizedBox(),
-          footer: footer,
+          // footer: footer,
           header: header,
           // doubles
           sheetWidth: sheetWidth,
           borderRadius: borderRadius,
           // bools
-          showFooterDivider: showFooterDivider,
+          // showFooterDivider: showFooterDivider,
           showHeaderDivider: showHeaderDivider,
           showSideDivider: showSideDivider,
           showBackButton: showBackButton,
@@ -160,10 +160,6 @@ Future<void> aweSideSheet({
         ),
       );
     },
-  ).then(
-    (value) {
-      if (!barrierDismissible) return;
-      onDismiss?.call();
-    },
   );
+  return result;
 }
