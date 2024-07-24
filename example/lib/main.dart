@@ -1,5 +1,5 @@
-import 'package:awesome_side_sheet/Enums/sheet_position.dart';
-import 'package:awesome_side_sheet/side_sheet.dart';
+import 'package:side_sheet/Enums/sheet_position.dart';
+import 'package:side_sheet/side_sheet.dart';
 import 'package:flutter/material.dart';
 
 void main() {

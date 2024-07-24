@@ -1,7 +1,7 @@
 library side_sheet;
 
-import 'package:awesome_side_sheet/Enums/sheet_position.dart';
-import 'package:awesome_side_sheet/build_side_sheet.dart';
+import 'package:side_sheet/Enums/sheet_position.dart';
+import 'package:side_sheet/build_side_sheet.dart';
 import 'package:flutter/material.dart';
 
 /// Displays a side sheet dialog with customizable options.

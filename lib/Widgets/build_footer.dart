@@ -1,4 +1,4 @@
-import 'package:awesome_side_sheet/Widgets/build_button.dart';
+import 'package:side_sheet/Widgets/build_button.dart';
 import 'package:flutter/material.dart';
 
 /// A widget that builds the footer section of a side sheet.

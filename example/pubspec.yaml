@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  awesome_side_sheet:
-    git: https://github.com/moesaid/awesome_side_sheet.git
+  side_sheet:
+    git: https://github.com/rsoft-in/side_sheet.git
 
 dev_dependencies:
   flutter_test:

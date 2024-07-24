@@ -20,7 +20,7 @@ To use this package in your Flutter project, add it to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  awesome_side_sheet: ^latest_version
+  side_sheet: ^latest_version
 ```
 
 Then, run:
@@ -36,7 +36,7 @@ For detailed information on how to integrate packages into your Flutter project,
 Here is a simple example demonstrating how to use the Awesome Side Sheet:
 
 ```dart
-import 'package:awesome_side_sheet/awesome_side_sheet.dart';
+import 'package:side_sheet/side_sheet.dart';
 
 aweSideSheet(context: context);
 ```
@@ -104,8 +104,8 @@ For more detailed examples and use cases, check the /example folder in the packa
 
 ## License
 
-awesome_side_sheet is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+side_sheet is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## credits
 
-awesome_side_sheet created by [Mohamed S Abdrabou](https://github.com/moesaid)
+side_sheet created by [Mohamed S Abdrabou](https://github.com/moesaid)

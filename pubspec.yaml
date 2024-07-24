@@ -1,7 +1,7 @@
-name: awesome_side_sheet
+name: side_sheet
 description: "Flutter package for Material Design 3 modal side sheets with customizable title, body, and actions."
-version: 0.0.3
-homepage: https://github.com/moesaid/awesome_side_sheet
+version: 0.0.4
+homepage: https://github.com/rsoft-in/side_sheet
 
 environment:
   sdk: ">=3.2.3 <4.0.0"
