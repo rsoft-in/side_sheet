@@ -48,7 +48,7 @@ import 'package:flutter/material.dart';
 /// );
 /// ```
 
-Future<bool?> aweSideSheet({
+Future<bool> aweSideSheet({
   // required
   required BuildContext context,
   required SheetPosition sheetPosition,
