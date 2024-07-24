@@ -55,15 +55,15 @@ Future<bool> aweSideSheet({
 
   // widgets
   Widget? body,
-  // Widget? footer,
+  Widget? footer,
   Widget? header,
 
   // bools
   bool barrierDismissible = true,
   bool showBackButton = true,
-  bool showCloseButton = true,
+  bool showCloseButton = false,
   bool showActions = true,
-  // bool showFooterDivider = true,
+  bool showFooterDivider = false,
   bool showHeaderDivider = true,
   bool showSideDivider = true,
   bool safeAreaTop = true,
@@ -78,7 +78,7 @@ Future<bool> aweSideSheet({
   Duration? transitionDuration,
 
   // doubles
-  double sheetWidth = 400,
+  double sheetWidth = 500,
   double? borderRadius,
 
   // Colors
@@ -127,13 +127,13 @@ Future<bool> aweSideSheet({
           title: title,
           // widgets
           body: body ?? const SizedBox(),
-          // footer: footer,
+          footer: footer,
           header: header,
           // doubles
           sheetWidth: sheetWidth,
           borderRadius: borderRadius,
           // bools
-          // showFooterDivider: showFooterDivider,
+          showFooterDivider: showFooterDivider,
           showHeaderDivider: showHeaderDivider,
           showSideDivider: showSideDivider,
           showBackButton: showBackButton,

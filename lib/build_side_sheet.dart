@@ -10,7 +10,7 @@ class SideSheet extends StatelessWidget {
   final Widget? header;
 
   // [footer] is the bottom of the sheet
-  // final Widget? footer;
+  final Widget? footer;
 
   // [title] is the title of the sheet and is displayed in the header if [header] is null
   final String? title;
@@ -25,7 +25,7 @@ class SideSheet extends StatelessWidget {
   final bool showActions;
 
   // [showFooterDivider] shows a divider between the body and footer
-  // final bool showFooterDivider;
+  final bool showFooterDivider;
 
   // [showHeaderDivider] shows a divider between the header and body
   final bool showHeaderDivider;
@@ -84,11 +84,11 @@ class SideSheet extends StatelessWidget {
     Key? key,
     this.body,
     this.header,
-    // this.footer,
+    this.footer,
     this.title,
     required this.showBackButton,
     required this.showActions,
-    // required this.showFooterDivider,
+    required this.showFooterDivider,
     required this.showHeaderDivider,
     required this.showSideDivider,
     required this.safeAreaTop,
@@ -194,16 +194,17 @@ class SideSheet extends StatelessWidget {
               Expanded(
                 child: body!,
               ),
-              // showFooterDivider
-              //     ? Divider(
-              //         height: 1,
-              //         thickness: 0.5,
-              //         color: dividerColor ??
-              //             (surfaceTintColor != null
-              //                 ? surfaceTintColor!.withOpacity(0.1)
-              //                 : colorScheme.onSurface.withOpacity(0.1)),
-              //       )
-              //     : const SizedBox(),
+              showFooterDivider
+                  ? Divider(
+                      height: 1,
+                      thickness: 0.5,
+                      color: dividerColor ??
+                          (surfaceTintColor != null
+                              ? surfaceTintColor!.withOpacity(0.1)
+                              : colorScheme.onSurface.withOpacity(0.1)),
+                    )
+                  : const SizedBox(),
+              footer ?? Container(),
               // footer ??
               //     BuildFooter(
               //       cancelActionOnPressed: cancelActionOnPressed,
