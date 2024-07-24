@@ -48,7 +48,7 @@ import 'package:flutter/material.dart';
 /// );
 /// ```
 
-Future<Object?> aweSideSheet({
+Future<bool?> aweSideSheet({
   // required
   required BuildContext context,
   required SheetPosition sheetPosition,
@@ -161,5 +161,9 @@ Future<Object?> aweSideSheet({
       );
     },
   );
-  return result;
+  if (result is bool) {
+    return result;
+  } else {
+    return false;
+  }
 }
