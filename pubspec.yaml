@@ -1,6 +1,6 @@
 name: side_sheet
 description: "Flutter package for Material Design 3 modal side sheets with customizable title, body, and actions."
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/rsoft-in/side_sheet
 
 environment:
