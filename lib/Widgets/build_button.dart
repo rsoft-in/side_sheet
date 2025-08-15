@@ -22,8 +22,7 @@ class BuildButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final Widget child;
 
-  const BuildButton({Key? key, this.onPressed, required this.child})
-      : super(key: key);
+  const BuildButton({super.key, this.onPressed, required this.child});
 
   @override
   Widget build(BuildContext context) {

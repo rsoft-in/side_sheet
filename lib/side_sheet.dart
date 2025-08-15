@@ -1,5 +1,3 @@
-library side_sheet;
-
 import 'package:side_sheet/Enums/sheet_position.dart';
 import 'package:side_sheet/build_side_sheet.dart';
 import 'package:flutter/material.dart';
@@ -102,7 +100,7 @@ Future<bool> aweSideSheet({
     context: context,
     transitionDuration: transitionDuration ?? const Duration(milliseconds: 500),
     barrierDismissible: barrierDismissible,
-    barrierColor: Theme.of(context).colorScheme.scrim.withOpacity(0.3),
+    barrierColor: Theme.of(context).colorScheme.scrim.withAlpha(80),
     barrierLabel: 'Material 3 side sheet',
     transitionBuilder: (context, animation, secondaryAnimation, child) {
       return SlideTransition(

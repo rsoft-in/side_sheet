@@ -81,7 +81,7 @@ class SideSheet extends StatelessWidget {
       cancelButtonTextColor;
 
   const SideSheet({
-    Key? key,
+    super.key,
     this.body,
     this.header,
     this.footer,
@@ -113,7 +113,7 @@ class SideSheet extends StatelessWidget {
     this.cancelButtonTextColor,
     this.headerPadding,
     this.footerPadding,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -152,15 +152,15 @@ class SideSheet extends StatelessWidget {
                       width: (sheetPosition == SheetPosition.right) ? 1 : 0,
                       color: dividerColor ??
                           (surfaceTintColor != null
-                              ? surfaceTintColor!.withOpacity(0.1)
-                              : colorScheme.onSurface.withOpacity(0.1)),
+                              ? surfaceTintColor!.withAlpha(25)
+                              : colorScheme.onSurface.withAlpha(25)),
                     ),
                     right: BorderSide(
                       width: (sheetPosition == SheetPosition.left) ? 1 : 0,
                       color: dividerColor ??
                           (surfaceTintColor != null
-                              ? surfaceTintColor!.withOpacity(0.1)
-                              : colorScheme.onSurface.withOpacity(0.1)),
+                              ? surfaceTintColor!.withAlpha(25)
+                              : colorScheme.onSurface.withAlpha(25)),
                     ),
                   )
                 : null,
@@ -187,8 +187,8 @@ class SideSheet extends StatelessWidget {
                       thickness: 0.5,
                       color: dividerColor ??
                           (surfaceTintColor != null
-                              ? surfaceTintColor!.withOpacity(0.1)
-                              : colorScheme.onSurface.withOpacity(0.1)),
+                              ? surfaceTintColor!.withAlpha(25)
+                              : colorScheme.onSurface.withAlpha(25)),
                     )
                   : const SizedBox(),
               Expanded(
@@ -200,8 +200,8 @@ class SideSheet extends StatelessWidget {
                       thickness: 0.5,
                       color: dividerColor ??
                           (surfaceTintColor != null
-                              ? surfaceTintColor!.withOpacity(0.1)
-                              : colorScheme.onSurface.withOpacity(0.1)),
+                              ? surfaceTintColor!.withAlpha(25)
+                              : colorScheme.onSurface.withAlpha(25)),
                     )
                   : const SizedBox(),
               footer ?? Container(),
